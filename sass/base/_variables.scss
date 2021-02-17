@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'montserrat_fontkit';
+    src: url('../fonts/montserrat-webfontkit/montserrat-semibolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-webfontkit/montserrat-semibolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'montserrat_fontkit';
+    src: url('../fonts/montserrat-webfontkit/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-webfontkit/../fonts/montserrat-webfontkit/../fonts/montserrat-webfontkit/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat_fontkit';
+    src: url('../fonts/montserrat-webfontkit/../fonts/montserrat-webfontkit/montserrat-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-webfontkit/montserrat-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'montserrat_fontkit';
+    src: url('../fonts/montserrat-webfontkit/montserrat-medium-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-webfontkit/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'merriweather_fontkit';
+    src: url('../fonts/merriweather-webfontkit/merriweather-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-webfontkit/merriweather-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'merriweather_fontkit';
+    src: url('../fonts/merriweather-webfontkit/merriweather-bold-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-webfontkit/merriweather-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweather_fontkit';
+    src: url('../fonts/merriweather-webfontkit/merriweather-italic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-webfontkit/merriweather-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'merriweather_fontkit';
+    src: url('../fonts/merriweather-webfontkit/merriweather-regular-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-webfontkit/merriweather-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin headerfonts {
+  font-family: "montserrat_fontkit", "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin bodyfonts {
+  font-family: "merriweather_fontkit", "Garamond", "Times", serif;
+}
+
+@mixin monofonts {
+  font-family: "Andale Mono", "Monaco", "Lucida Console", monospace;
+}
+
+
+// Colors.
+$rpg_blue: #000066;
+$rpg_body_copy: #222222;
+$rpg_grey: #9999cc;
+$rpg_light_grey: lighten($rpg_grey, 20%);
+
+
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  @include bodyfonts();
+  color: $rpg_body_copy;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.layout-sidebar-first,
+.layout-sidebar-second,
+.layout-content {
+  // background-color: #cccccc;
+  float: left;
+}
+
+.layout-content {
+  // background-color: #99cccc;
+}
+
+footer {
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include headerfonts();
+}

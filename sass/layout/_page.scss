@@ -1,0 +1,24 @@
+.layout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+  .status-messages-container {
+    background-color: $rpg_light_grey;
+    padding: 1em;
+    border: 1px $rpg_grey solid;
+    margin: 0.5em 0;
+    @include monofonts();
+  }
+
+  .layout-sidebar-first > div,
+  .layout-content > div {
+    padding-right: 1em;
+  }
+  .layout-content #block-rpgtheme-page-title {
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+}

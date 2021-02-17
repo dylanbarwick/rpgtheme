@@ -1,0 +1,24 @@
+rpgtheme.mobile:
+  label: mobile
+  mediaQuery: 'all and (max-width: 480px)'
+  weight: '1'
+  multipliers:
+    - '1x'
+rpgtheme.tablet:
+  label: tablet
+  mediaQuery: 'all and (min-width: 481px) and (max-width: 850px)'
+  weight: '2'
+  multipliers:
+    - '1x'
+rpgtheme.desktop:
+  label: desktop
+  mediaQuery: 'all and (min-width: 851px) and (max-width: 1200px)'
+  weight: '3'
+  multipliers:
+    - '1x'
+rpgtheme.bigdesktop:
+  label: big desktop
+  mediaQuery: 'all and (min-width: 1201px)'
+  weight: '4'
+  multipliers:
+    - '1x'

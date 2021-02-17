@@ -1,0 +1,79 @@
+#block-rpgtheme-branding {
+  .branding-container {
+    .brogame {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle;
+      a {
+        display: block;
+        text-align: center;
+        img.logo {
+          width: 12em;
+          height: auto;
+        }
+      }
+      a.site-name {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        color: $rpg_blue;
+        text-decoration: none;
+        transition: 0.2;
+        &:hover {
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+    .brogan {
+      display: inline-block;
+      font-size: 1.5em;
+      font-style: italic;
+      opacity: 0.6;
+    }
+  }
+
+}
+
+#block-rpgtheme-main-menu {
+  border: 0 #000000 solid;
+  border-width: 0 0 2px 0;
+  position: relative;
+  &::before {
+      content: "";
+      background-image: url('../images/internal-shadow-bg.png');
+      background-size: auto 150%;
+      background-repeat: repeat-x;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.3;
+  }
+  ul {
+    li {
+      margin-right: 0.7em;
+      a {
+        text-decoration: none;
+        color: #000000;
+        background-color: #cccccc;
+        display: inline-block;
+        padding: 0.2em 1.5em 0.2em 0.5em;
+        border-radius: 0.4em 0.8em 0 0;
+        border: 0 #000000 solid;
+        border-width: 2px 2px 0 2px;
+        transition: 0.2s;
+        &:hover {
+          background-color: #000066;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+#block-rpgtheme-account-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
