@@ -1,15 +1,9 @@
 @import 'base/variables';
 
-// @import 'pure-build/menus-min';
-// @import 'pure-build/base-context-min';
-// @import 'pure-build/base-min';
-// @import 'pure-build/buttons-min';
-// @import 'pure-build/forms-min';
-// @import 'pure-build/grids-core-min';
 @import 'pure-build/pure';
-// @import 'pure-build/tables-min';
 
 @import 'layout/purecssresponsivegrid';
 @import 'layout/page';
 
 @import 'component/blocks';
+@import 'component/widgets';
