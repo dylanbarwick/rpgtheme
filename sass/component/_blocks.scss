@@ -34,7 +34,8 @@
 
 }
 
-#block-rpgtheme-main-menu {
+#block-rpgtheme-main-menu,
+#block-rpgtheme-local-tasks {
   border: 0 #000000 solid;
   border-width: 0 0 2px 0;
   position: relative;
@@ -76,4 +77,21 @@
   position: absolute;
   top: 0;
   right: 0;
+}
+
+// Local tasks at the top of the user account page
+#block-rpgtheme-local-tasks {
+  .rpg-local-tasks {
+    ul {
+      li {
+        margin-right: 0.4em;
+        a {
+          // In case I need to override anything else.
+          &:hover {
+            background-color: #006600;
+          }
+        }
+      }
+    }
+  }
 }

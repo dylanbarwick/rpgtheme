@@ -1641,11 +1641,13 @@ striping:
   font-style: italic;
   opacity: 0.6; }
 
-#block-rpgtheme-main-menu {
+#block-rpgtheme-main-menu,
+#block-rpgtheme-local-tasks {
   border: 0 #000000 solid;
   border-width: 0 0 2px 0;
   position: relative; }
-  #block-rpgtheme-main-menu::before {
+  #block-rpgtheme-main-menu::before,
+  #block-rpgtheme-local-tasks::before {
     content: "";
     background-image: url("../images/internal-shadow-bg.png");
     background-size: auto 150%;
@@ -1656,9 +1658,11 @@ striping:
     bottom: 0px;
     left: 0px;
     opacity: 0.3; }
-  #block-rpgtheme-main-menu ul li {
+  #block-rpgtheme-main-menu ul li,
+  #block-rpgtheme-local-tasks ul li {
     margin-right: 0.7em; }
-    #block-rpgtheme-main-menu ul li a {
+    #block-rpgtheme-main-menu ul li a,
+    #block-rpgtheme-local-tasks ul li a {
       text-decoration: none;
       color: #000000;
       background-color: #cccccc;
@@ -1668,7 +1672,8 @@ striping:
       border: 0 #000000 solid;
       border-width: 2px 2px 0 2px;
       transition: 0.2s; }
-      #block-rpgtheme-main-menu ul li a:hover {
+      #block-rpgtheme-main-menu ul li a:hover,
+      #block-rpgtheme-local-tasks ul li a:hover {
         background-color: #000066;
         color: #ffffff; }
 
@@ -1676,5 +1681,16 @@ striping:
   position: absolute;
   top: 0;
   right: 0; }
+
+#block-rpgtheme-local-tasks .rpg-local-tasks ul li {
+  margin-right: 0.4em; }
+  #block-rpgtheme-local-tasks .rpg-local-tasks ul li a:hover {
+    background-color: #006600; }
+
+.dropbutton-widget {
+  background-color: #ffffff;
+  padding: 4px 2em 4px 4px;
+  border-radius: 4px;
+  border: 1px #cccccc solid; }
 
 /*# sourceMappingURL=styles.css.map */
