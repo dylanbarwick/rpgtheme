@@ -18,9 +18,9 @@
         text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
         color: $rpg_blue;
         text-decoration: none;
-        transition: 0.2;
+        transition: 0.2s;
         &:hover {
-          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
         }
       }
     }
@@ -64,8 +64,9 @@
         border: 0 #000000 solid;
         border-width: 2px 2px 0 2px;
         transition: 0.2s;
-        &:hover {
-          background-color: #000066;
+        &:hover,
+        &.is-active {
+          background-color: $rpg_blue;
           color: #ffffff;
         }
       }
@@ -87,8 +88,9 @@
         margin-right: 0.4em;
         a {
           // In case I need to override anything else.
-          &:hover {
-            background-color: #006600;
+          &:hover,
+          &.is-active {
+            background-color: $rpg_emerald;
           }
         }
       }
